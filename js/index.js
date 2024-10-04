@@ -3,6 +3,6 @@ document.addEventListener("DOMContentLoaded", function(){
   const greeting = document.getElementById('greeting-message');
 
   if(username) {
-    greeting.innerHTML = `Hello, <br> ${username}!`;
+    greeting.innerHTML = `Hello,<br>${username}!`;
   }
 });
