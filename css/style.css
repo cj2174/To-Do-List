@@ -100,6 +100,7 @@ img {
     border-bottom-left-radius: 20px;
 }
 #clock {
+    margin-top: 40px;
     font-family: "Gowun Batang", serif;
     text-align: center;
     font-size: 38px;
@@ -214,7 +215,7 @@ img {
     border: none;
     border-radius: 10px;
     padding: 20px;
-    margin: 60px 0;
+    margin: 80px 0;
     text-align: center;
     
 }
@@ -231,5 +232,6 @@ img {
 
 #weather-city {
     font-size: 18px;
-    color: #505050;
+    font-weight: bold;
+    color: #72828a;
 }

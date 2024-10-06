@@ -12,7 +12,7 @@ function saveToDos() {
 function deleteTodo(event) {
   const li = event.target.parentElement;
   li.remove();
-  toDos = toDos.filter(toDo => toDo.id !== parseInt(li.id));
+  toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
   saveToDos();
 }
 
@@ -31,7 +31,14 @@ function paintToDo(newTodo) {
 
 function handleToDoSubmit(event) {
   event.preventDefault();
-  const newTodo = toDoInput.value;
+  const newTodo = toDoInput.value.trim();
+  if (newTodo === "") {
+    return;
+  }
+  if (toDos.length >= 5) {
+    alert("리스트는 최대 5개까지만 추가할 수 있어요.");
+    return;
+  }
   toDoInput.value = "";
   const newTodoObj = {
     text: newTodo,
@@ -47,7 +54,7 @@ toDoForm.addEventListener("submit", handleToDoSubmit);
 const savedToDos = localStorage.getItem(TODOS_KEY);
 
 if (savedToDos !== null) {
-    const parsedToDos = JSON.parse(savedToDos);
-    toDos = parsedToDos;
-    parsedToDos.forEach(paintToDo);
-  }
+  const parsedToDos = JSON.parse(savedToDos);
+  toDos = parsedToDos;
+  parsedToDos.forEach(paintToDo);
+}
