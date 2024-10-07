@@ -27,6 +27,18 @@
                 <div id="greeting-message" class="greeting-message">
                     <!-- 사용자 이름이 표시될 부분 -->
                 </div>
+        
+                <div id="timer-container">
+                    <div>
+                        <h2 id="timer-display">00:00:00</h2>
+                    </div>
+                    <div>
+                        <button id="start-btn">Start</button>
+                        <button id="stop-btn" disabled>Stop</button>
+                        <button id="reset-btn" disabled>Reset</button>
+                    </div>
+                </div>
+                
                 <form id="todo-form">
                     <input type="text" id="todo-input" placeholder="Write a To Do and Press Enter" required maxlength="18" />
                 </form>
@@ -45,5 +57,6 @@
     <script src="js/quotes.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/timer.js"></script>
 </body>
 </html>
