@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         welcomeMessage.style.display = "block";
 
         setTimeout(() => {
-          window.location.href = "index.html";
+          window.location.href = "main.html";
         }, 2000);
       }, 1000);
     };

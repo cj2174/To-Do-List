@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://darkskyapp.github.io/skycons/skycons.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-box">
+            <div>
+                <h2 id="clock">00:00</h2>
+            </div>
+            <div id="weather">
+                <canvas id="weather-icon" width="128" height="128"></canvas>
+                <br>
+                <span id="weather-text"></span>
+                <br>
+                <span id="weather-city"></span>
+            </div>
+            
+        </div>
+        <div class="right-box">
+            <div class="top-box">
+                <!-- Greeting과 Timer를 묶는 새로운 컨테이너 -->
+                <div id="greeting-timer-container">
+                    <div id="greeting-message" class="greeting-message">
+                        <!-- 사용자 이름이 표시될 부분 -->
+                    </div>
+                    <div id="timer-container">
+                        <div>
+                            <h2 id="timer-display">00:00:00</h2>
+                        </div>
+                        <div>
+                            <button id="start-btn">Start</button>
+                            <button id="stop-btn" disabled>Stop</button>
+                            <button id="reset-btn" disabled>Reset</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <form id="todo-form">
+                    <input type="text" id="todo-input" placeholder="Write a To Do and Press Enter" required maxlength="18" />
+                </form>
+            </div>
+            
+            <ul id="todo-list"></ul>
+            <div id="quote">
+                <span></span>
+                <div id="author">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/timer.js"></script>
+</body>
+</html>

@@ -28,6 +28,7 @@ img {
     height: 80vh;
     padding: 20px;
     display: flex;
+    position: relative;
     border-radius: 20px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
@@ -88,6 +89,17 @@ img {
 
 .submit-button:hover {
     background-color: #848484;
+}
+
+.desc {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    font-size: 18px;
+    transform: translateX(-50%);
+    color: #848484;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 .left-box {
