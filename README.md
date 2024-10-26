@@ -1,5 +1,5 @@
 # To-Do-List - 노마드코더 바닐라JS 챌린지
-
+<br />
 
 **사이트** : https://cj2174.github.io/To-Do-List/
 (PC 화면에 최적화)
@@ -12,7 +12,7 @@
 - 새로고침 시 배경화면 랜덤하게 변경 (총 3가지)
 - 이름 입력 시 Main 화면에 이름 반영
 
-
+<br />
 ## Main 화면
 ![image](https://github.com/user-attachments/assets/23437a47-2074-4db2-ba60-fa6f9eb82f79)
 
@@ -23,7 +23,8 @@
 - 현재 위치에 따른 날씨 표시
 - 타이머 기능
 - 화면 새로고침 시 명언 랜덤하게 변경
-
+<br />
+<br />
 🛠️ 사용 기술
 
 - HTML
