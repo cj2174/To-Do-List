@@ -12,7 +12,6 @@
 - 새로고침 시 배경화면 랜덤하게 변경 (총 3가지)
 - 이름 입력 시 Main 화면에 이름 반영
 
-<br />
 ## Main 화면
 ![image](https://github.com/user-attachments/assets/23437a47-2074-4db2-ba60-fa6f9eb82f79)
 
